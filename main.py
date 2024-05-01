@@ -9,11 +9,13 @@ print("This quiz is about maths")
 
 # Ask The User A Question
 
-input("What is 1 + 1? ")
+answer = input("What is 1 + 1? ")
 
-# Tell Them THe Correct Answer
-
-print("The answer is 3")
+# Check The User's Answer and Give Feedback
+if answer == "2":
+    print("Nice, you got it correct")
+if answer != "2":
+    print("Sadly, that is incorrect. The answer is 2")
 
 # Next Question
 
