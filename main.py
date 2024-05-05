@@ -14,26 +14,33 @@ answer = input("What is 1 + 1? ")
 # Check The User's Answer and Give Feedback
 if answer == "2":
     print("Nice, you got it correct")
-if answer != "2":
-    print("Sadly, that is incorrect. The answer is 2")
+else:
+    print("Sadly, this is incorrect. The answer is 2")
 
 # Next Question
 
 print("Here is an even harder question:")
-input("What is 12 x 12? ")
+answerone = input("What is 12 x 12? ")
 
-# Tells The Correct Answer To Question 2
+# Check The User's Answer and Give Feedback
 
-print("The answer is 144")
+if answerone == "144":
+    print("Nice, you got it correct")
+else:
+    print("Inccorect, 12 x 12 is equal to 144")
+
 
 # Question 3
 
 print("Here is an even harder question about like terms:")
-input("Simplify: 2xc+2k+2x+3c+14cx-14k: ")
+answertwo = input("Simplify: 2x+2k-4k: ")
 
-# Answer To Question 3
+# Check The User's Answer and Give Feedback
 
-print("The answer is: 16cx+2x+2c-12k")
+if answertwo == "2x-2k":
+    print("Nice, that is correct.")
+else:
+    print("Nice try, but incorect. The answer is 2x-2k. Remember to add like terms together.")
 
 #End The Quiz
 
