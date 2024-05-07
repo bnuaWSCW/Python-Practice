@@ -13,10 +13,15 @@ print("This quiz is about maths")
 
 # Ask The User A Question
 
-answer = input("What is 1 + 1? ")
+question = ("What is 1 + 1? ")
+a = "1"
+b = "2"
+c = "3"
+d = "4"
+answer = input("{}\nA.{} B.{} C.{} D.{}".format(question, a, b, c, d)).lower()
 
 # Check The User's Answer and Give Feedback
-if answer == "2":
+if answer == "2" or answer == b or answer == "b":
     print("Nice, you got it correct")
     score +=1
 elif answer == "":
@@ -55,11 +60,11 @@ else:
 # Question 3
 
 print("Here is an even harder question about like terms:")
-answertwo = input("Simplify: 2x+2k-4k: ")
+answertwo = input("Simplify: 2x+2k-4k: ").lower().upper()
 
 # Check The User's Answer and Give Feedback
 
-if answertwo == "2x-2k":
+if answertwo == "2x-2k".lower().upper():
     print("Nice, that is correct.")
     score +=1
 elif answertwo == "":
@@ -76,5 +81,5 @@ else:
 #End The Quiz
 
 print("Thank you for playing my quiz")
-print("Your final score is", score)
-print("Have a great day",name)
+print("Your final score is {}".format(score))
+print("Have a great day {}".format(name))
