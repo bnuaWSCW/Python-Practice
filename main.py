@@ -16,7 +16,6 @@ QUIZ_LIST_OPTION = ["A","B","C","D"]
 
 QUIZ_ANSWERS = [1,0,2]
 
-QUESTION_FORMAT = {"{}\nA.{}\nB.{}\nC.{}\nD.{}\n"}
 
     # Ask The User Their Name And Store It
 
@@ -41,8 +40,8 @@ while play == "yes".lower():
         try:
             attempt = int(input("How many attempts would you like for the quiz? 1, 2, 3 or 4 attempts?"))
             break
-        except:
-            print("That is not an integer")
+        except Exception as e:
+            print("That is not an integer", e)
 
     # Ask The User A Question
 
@@ -82,7 +81,7 @@ while play == "yes".lower():
                 print(random.choice(BAD_COMMENT))
                 question_tries -= 1
                 print("You have {} attempt(s) left".format(question_tries))
-            
+
 
 
     if question_tries == 0:
