@@ -77,5 +77,6 @@ while play == "yes".lower():
     print("\nCongrats, you have guessed all ten of the most visted countries in the world")
     print("Thank you for playing")
     play != "Yes".lower()
+    break
     
 
